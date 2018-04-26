@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C70716392092088600EC41AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C70716382092088600EC41AE /* AppDelegate.m */; };
+		C707163C2092088600EC41AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C707163B2092088600EC41AE /* ViewController.m */; };
+		C707163F2092088600EC41AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C707163D2092088600EC41AE /* Main.storyboard */; };
+		C70716412092088700EC41AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70716402092088700EC41AE /* Assets.xcassets */; };
+		C70716442092088700EC41AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70716422092088700EC41AE /* LaunchScreen.storyboard */; };
+		C70716472092088700EC41AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C70716462092088700EC41AE /* main.m */; };
+		C70716662092089D00EC41AE /* LYStickiNessBallBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = C70716502092089D00EC41AE /* LYStickiNessBallBoard.m */; };
+		C70716672092089D00EC41AE /* UIBezierPath+LYCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = C70716532092089D00EC41AE /* UIBezierPath+LYCircle.m */; };
+		C70716682092089D00EC41AE /* UIGestureRecognizer+RecognizerNames.m in Sources */ = {isa = PBXBuildFile; fileRef = C70716552092089D00EC41AE /* UIGestureRecognizer+RecognizerNames.m */; };
+		C70716692092089D00EC41AE /* UIView+DeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = C70716572092089D00EC41AE /* UIView+DeepCopy.m */; };
+		C707166A2092089D00EC41AE /* UIView+Explosion.m in Sources */ = {isa = PBXBuildFile; fileRef = C70716592092089D00EC41AE /* UIView+Explosion.m */; };
+		C707166B2092089D00EC41AE /* UIView+PointUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C707165B2092089D00EC41AE /* UIView+PointUtils.m */; };
+		C707166C2092089D00EC41AE /* UIView+SpringBackAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = C707165D2092089D00EC41AE /* UIView+SpringBackAnimate.m */; };
+		C707166D2092089D00EC41AE /* Explosion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C707165E2092089D00EC41AE /* Explosion.bundle */; };
+		C707166E2092089D00EC41AE /* LYCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = C70716612092089D00EC41AE /* LYCircle.m */; };
+		C707166F2092089D00EC41AE /* LYStickiNessBallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C70716632092089D00EC41AE /* LYStickiNessBallModel.m */; };
+		C70716702092089D00EC41AE /* UIView+StickiNessBall.m in Sources */ = {isa = PBXBuildFile; fileRef = C70716652092089D00EC41AE /* UIView+StickiNessBall.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C70716342092088600EC41AE /* LYStickiBallDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYStickiBallDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70716372092088600EC41AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C70716382092088600EC41AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C707163A2092088600EC41AE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C707163B2092088600EC41AE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C707163E2092088600EC41AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C70716402092088700EC41AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C70716432092088700EC41AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C70716452092088700EC41AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C70716462092088700EC41AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C707164F2092089D00EC41AE /* LYStickiNessBallBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYStickiNessBallBoard.h; sourceTree = "<group>"; };
+		C70716502092089D00EC41AE /* LYStickiNessBallBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYStickiNessBallBoard.m; sourceTree = "<group>"; };
+		C70716522092089D00EC41AE /* UIBezierPath+LYCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+LYCircle.h"; sourceTree = "<group>"; };
+		C70716532092089D00EC41AE /* UIBezierPath+LYCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+LYCircle.m"; sourceTree = "<group>"; };
+		C70716542092089D00EC41AE /* UIGestureRecognizer+RecognizerNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+RecognizerNames.h"; sourceTree = "<group>"; };
+		C70716552092089D00EC41AE /* UIGestureRecognizer+RecognizerNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+RecognizerNames.m"; sourceTree = "<group>"; };
+		C70716562092089D00EC41AE /* UIView+DeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DeepCopy.h"; sourceTree = "<group>"; };
+		C70716572092089D00EC41AE /* UIView+DeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DeepCopy.m"; sourceTree = "<group>"; };
+		C70716582092089D00EC41AE /* UIView+Explosion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Explosion.h"; sourceTree = "<group>"; };
+		C70716592092089D00EC41AE /* UIView+Explosion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Explosion.m"; sourceTree = "<group>"; };
+		C707165A2092089D00EC41AE /* UIView+PointUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PointUtils.h"; sourceTree = "<group>"; };
+		C707165B2092089D00EC41AE /* UIView+PointUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PointUtils.m"; sourceTree = "<group>"; };
+		C707165C2092089D00EC41AE /* UIView+SpringBackAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SpringBackAnimate.h"; sourceTree = "<group>"; };
+		C707165D2092089D00EC41AE /* UIView+SpringBackAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SpringBackAnimate.m"; sourceTree = "<group>"; };
+		C707165E2092089D00EC41AE /* Explosion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Explosion.bundle; sourceTree = "<group>"; };
+		C70716602092089D00EC41AE /* LYCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCircle.h; sourceTree = "<group>"; };
+		C70716612092089D00EC41AE /* LYCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCircle.m; sourceTree = "<group>"; };
+		C70716622092089D00EC41AE /* LYStickiNessBallModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYStickiNessBallModel.h; sourceTree = "<group>"; };
+		C70716632092089D00EC41AE /* LYStickiNessBallModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYStickiNessBallModel.m; sourceTree = "<group>"; };
+		C70716642092089D00EC41AE /* UIView+StickiNessBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+StickiNessBall.h"; sourceTree = "<group>"; };
+		C70716652092089D00EC41AE /* UIView+StickiNessBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+StickiNessBall.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C70716312092088600EC41AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C707162B2092088600EC41AE = {
+			isa = PBXGroup;
+			children = (
+				C70716362092088600EC41AE /* LYStickiBallDemo */,
+				C70716352092088600EC41AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C70716352092088600EC41AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C70716342092088600EC41AE /* LYStickiBallDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C70716362092088600EC41AE /* LYStickiBallDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C707164D2092089D00EC41AE /* Classes */,
+				C70716372092088600EC41AE /* AppDelegate.h */,
+				C70716382092088600EC41AE /* AppDelegate.m */,
+				C707163A2092088600EC41AE /* ViewController.h */,
+				C707163B2092088600EC41AE /* ViewController.m */,
+				C707163D2092088600EC41AE /* Main.storyboard */,
+				C70716402092088700EC41AE /* Assets.xcassets */,
+				C70716422092088700EC41AE /* LaunchScreen.storyboard */,
+				C70716452092088700EC41AE /* Info.plist */,
+				C70716462092088700EC41AE /* main.m */,
+			);
+			path = LYStickiBallDemo;
+			sourceTree = "<group>";
+		};
+		C707164D2092089D00EC41AE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C707164E2092089D00EC41AE /* Board */,
+				C70716512092089D00EC41AE /* Category */,
+				C707165E2092089D00EC41AE /* Explosion.bundle */,
+				C707165F2092089D00EC41AE /* Models */,
+				C70716642092089D00EC41AE /* UIView+StickiNessBall.h */,
+				C70716652092089D00EC41AE /* UIView+StickiNessBall.m */,
+			);
+			name = Classes;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
+		C707164E2092089D00EC41AE /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				C707164F2092089D00EC41AE /* LYStickiNessBallBoard.h */,
+				C70716502092089D00EC41AE /* LYStickiNessBallBoard.m */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		C70716512092089D00EC41AE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C70716522092089D00EC41AE /* UIBezierPath+LYCircle.h */,
+				C70716532092089D00EC41AE /* UIBezierPath+LYCircle.m */,
+				C70716542092089D00EC41AE /* UIGestureRecognizer+RecognizerNames.h */,
+				C70716552092089D00EC41AE /* UIGestureRecognizer+RecognizerNames.m */,
+				C70716562092089D00EC41AE /* UIView+DeepCopy.h */,
+				C70716572092089D00EC41AE /* UIView+DeepCopy.m */,
+				C70716582092089D00EC41AE /* UIView+Explosion.h */,
+				C70716592092089D00EC41AE /* UIView+Explosion.m */,
+				C707165A2092089D00EC41AE /* UIView+PointUtils.h */,
+				C707165B2092089D00EC41AE /* UIView+PointUtils.m */,
+				C707165C2092089D00EC41AE /* UIView+SpringBackAnimate.h */,
+				C707165D2092089D00EC41AE /* UIView+SpringBackAnimate.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C707165F2092089D00EC41AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C70716602092089D00EC41AE /* LYCircle.h */,
+				C70716612092089D00EC41AE /* LYCircle.m */,
+				C70716622092089D00EC41AE /* LYStickiNessBallModel.h */,
+				C70716632092089D00EC41AE /* LYStickiNessBallModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C70716332092088600EC41AE /* LYStickiBallDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C707164A2092088700EC41AE /* Build configuration list for PBXNativeTarget "LYStickiBallDemo" */;
+			buildPhases = (
+				C70716302092088600EC41AE /* Sources */,
+				C70716312092088600EC41AE /* Frameworks */,
+				C70716322092088600EC41AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYStickiBallDemo;
+			productName = LYStickiBallDemo;
+			productReference = C70716342092088600EC41AE /* LYStickiBallDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C707162C2092088600EC41AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = HHLY;
+				TargetAttributes = {
+					C70716332092088600EC41AE = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = C707162F2092088600EC41AE /* Build configuration list for PBXProject "LYStickiBallDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C707162B2092088600EC41AE;
+			productRefGroup = C70716352092088600EC41AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C70716332092088600EC41AE /* LYStickiBallDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C70716322092088600EC41AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70716442092088700EC41AE /* LaunchScreen.storyboard in Resources */,
+				C707166D2092089D00EC41AE /* Explosion.bundle in Resources */,
+				C70716412092088700EC41AE /* Assets.xcassets in Resources */,
+				C707163F2092088600EC41AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C70716302092088600EC41AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C707163C2092088600EC41AE /* ViewController.m in Sources */,
+				C70716472092088700EC41AE /* main.m in Sources */,
+				C70716702092089D00EC41AE /* UIView+StickiNessBall.m in Sources */,
+				C707166C2092089D00EC41AE /* UIView+SpringBackAnimate.m in Sources */,
+				C707166F2092089D00EC41AE /* LYStickiNessBallModel.m in Sources */,
+				C707166E2092089D00EC41AE /* LYCircle.m in Sources */,
+				C707166A2092089D00EC41AE /* UIView+Explosion.m in Sources */,
+				C70716692092089D00EC41AE /* UIView+DeepCopy.m in Sources */,
+				C70716662092089D00EC41AE /* LYStickiNessBallBoard.m in Sources */,
+				C70716392092088600EC41AE /* AppDelegate.m in Sources */,
+				C70716682092089D00EC41AE /* UIGestureRecognizer+RecognizerNames.m in Sources */,
+				C707166B2092089D00EC41AE /* UIView+PointUtils.m in Sources */,
+				C70716672092089D00EC41AE /* UIBezierPath+LYCircle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C707163D2092088600EC41AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C707163E2092088600EC41AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C70716422092088700EC41AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C70716432092088700EC41AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C70716482092088700EC41AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C70716492092088700EC41AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C707164B2092088700EC41AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYStickiBallDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhly.LYStickiBallDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C707164C2092088700EC41AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYStickiBallDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhly.LYStickiBallDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C707162F2092088600EC41AE /* Build configuration list for PBXProject "LYStickiBallDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70716482092088700EC41AE /* Debug */,
+				C70716492092088700EC41AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C707164A2092088700EC41AE /* Build configuration list for PBXNativeTarget "LYStickiBallDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C707164B2092088700EC41AE /* Debug */,
+				C707164C2092088700EC41AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C707162C2092088600EC41AE /* Project object */;
+}

@@ -22,12 +22,9 @@ static NSString *reusedName = @"reused_StickiNessBall_name";
 }
 
 - (void)setLy_delegate:(id)delegate {
-    objc_setAssociatedObject(self, @selector(ly_Delegate), delegate, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(ly_delegate), delegate, OBJC_ASSOCIATION_RETAIN);
 }
 
-// - (void)ly_addDelegate:(id)delegate {
-//     self.ly_Delegate = delegate;
-// }
 
 - (void)ly_addStickiNessBall {
     __block UIPanGestureRecognizer *drag = nil;
