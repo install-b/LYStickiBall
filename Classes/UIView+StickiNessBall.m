@@ -15,6 +15,19 @@
 static NSString *reusedName = @"reused_StickiNessBall_name";
 
 @implementation UIView (StickiNessBall)
+
+- (id)ly_Delegate {
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setLy_Delegate:(id)delegate {
+    objc_setAssociatedObject(self, @selector(ly_Delegate), delegate, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (void)ly_addDelegate:(id)delegate {
+    self.ly_Delegate = delegate;
+}
+
 - (void)ly_addStickiNessBall {
     __block UIPanGestureRecognizer *drag = nil;
     [[self recognizersWithName:reusedName] enumerateObjectsUsingBlock:^(__kindof UIGestureRecognizer * _Nonnull obj, BOOL * _Nonnull stop) {
@@ -61,11 +74,13 @@ static NSString *reusedName = @"reused_StickiNessBall_name";
             [board startStickiNessBallWithView:self];
             break;
         }
+            
         case UIGestureRecognizerStateChanged:{
             self.hidden = YES;
             [board updateTouchCenter:touchPoint];
             break;
         }
+            
         case UIGestureRecognizerStateEnded: {
             if (board.distance > board.stickiNessBallModel.maxDistance) {
                 __weak LYStickiNessBallBoard *weakBoard = board;
@@ -75,6 +90,11 @@ static NSString *reusedName = @"reused_StickiNessBall_name";
                     // 通知自己
                     if ([self respondsToSelector:@selector(viewDidExplosion)]) {
                         [self viewDidExplosion];
+                    }
+                    
+                    // 通知代理
+                    if ([self.ly_Delegate respondsToSelector:@selector(viewDidExplosion)]) {
+                        [self.ly_Delegate viewDidExplosion];
                     }
                 }];
             } else {

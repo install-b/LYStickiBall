@@ -15,6 +15,7 @@
  视图已经爆炸 实现了这个方法就能监听什么时候可以获取 (调用了ly_addStickiNessBall方法才会)
  */
 - (void)viewDidExplosion;
+
 @end
 
 
@@ -31,6 +32,12 @@
  移除粘性效果
  */
 - (void)ly_removeStickiNessBall;
+
+/**
+ 添加代理
+ @param delegete 代理对象
+ */
+- (void)ly_addDelegate:(id <LYStickiNessBallDelegate>)delegate;
 
 @end
 
