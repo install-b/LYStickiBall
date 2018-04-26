@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "LYStickiBall"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A simple UIView category which can easy integrated QQ sticky red dots view."
 
   s.description  = "A category for UIView which can easy integrated QQ sticky red dots view. //> 一行代码集成 QQ 粘性未读数红点视图"
