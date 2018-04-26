@@ -37,8 +37,9 @@
  添加代理
  @param delegete 代理对象
  */
-- (void)ly_addDelegate:(id <LYStickiNessBallDelegate>)delegate;
+//- (void)ly_addDelegate:(id <LYStickiNessBallDelegate>)delegate;
 
+@property(weak)id <LYStickiNessBallDelegate> ly_delegate;
 @end
 
 

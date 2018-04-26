@@ -11,22 +11,23 @@
 #import "LYStickiNessBallBoard.h"
 #import "UIView+Explosion.h"
 #import "UIView+SpringBackAnimate.h"
+#import <objc/runtime.h>
 
 static NSString *reusedName = @"reused_StickiNessBall_name";
 
 @implementation UIView (StickiNessBall)
 
-- (id)ly_Delegate {
+- (id)ly_delegate {
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setLy_Delegate:(id)delegate {
+- (void)setLy_delegate:(id)delegate {
     objc_setAssociatedObject(self, @selector(ly_Delegate), delegate, OBJC_ASSOCIATION_RETAIN);
 }
 
-- (void)ly_addDelegate:(id)delegate {
-    self.ly_Delegate = delegate;
-}
+// - (void)ly_addDelegate:(id)delegate {
+//     self.ly_Delegate = delegate;
+// }
 
 - (void)ly_addStickiNessBall {
     __block UIPanGestureRecognizer *drag = nil;
@@ -93,8 +94,8 @@ static NSString *reusedName = @"reused_StickiNessBall_name";
                     }
                     
                     // 通知代理
-                    if ([self.ly_Delegate respondsToSelector:@selector(viewDidExplosion)]) {
-                        [self.ly_Delegate viewDidExplosion];
+                    if ([self.ly_delegate respondsToSelector:@selector(viewDidExplosion)]) {
+                        [self.ly_delegate viewDidExplosion];
                     }
                 }];
             } else {
